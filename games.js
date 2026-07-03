@@ -597,7 +597,665 @@ const playerProfileUrls = {
   "Maria Petkova": "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308853&userId=777895333"
 };
 
-const gameSummaries = {};
+const matchArticles = {
+  "3007": [
+    {
+      "title": "Stimmungsvoller Start in der „neuen“ Liga",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778401249",
+      "origin": "NVM"
+    },
+    {
+      "title": "Ein Aufttakt nach Maß",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778401072",
+      "origin": "RRV"
+    },
+    {
+      "title": "\"Wir sind vorbereitet\"",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778375597",
+      "origin": "RRV"
+    },
+    {
+      "title": "Wiedersehen nach zwei Wochen",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778334473",
+      "origin": "NVM"
+    }
+  ],
+  "3013": [
+    {
+      "title": "3:1-Sieg im ersten Heimspiel",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778486623",
+      "origin": "RRV"
+    },
+    {
+      "title": "Spannung vor dem ersten Heimspiel",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778455404",
+      "origin": "RRV"
+    }
+  ],
+  "3020": [
+    {
+      "title": "Gebrauchter Tag bei Meisterschaftsaspirant",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778579260",
+      "origin": "BER"
+    },
+    {
+      "title": "Rote Raben behalten ihre weiße Weste",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778574097",
+      "origin": "RRV"
+    },
+    {
+      "title": "Rote Raben wollen zu Hause erneut punkten",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778539669",
+      "origin": "RRV"
+    }
+  ],
+  "3025": [
+    {
+      "title": "Der erste Heimsieg der Saison",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778688489",
+      "origin": "SWS"
+    },
+    {
+      "title": "Trainer Gallardo sollte recht behalten",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778655129",
+      "origin": "RRV"
+    },
+    {
+      "title": "Wildcats streben den ersten Heimsieg an",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778632585",
+      "origin": "SWS"
+    },
+    {
+      "title": "Schwierige Aufgabe für die Roten Raben",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778625892",
+      "origin": "RRV"
+    }
+  ],
+  "3034": [
+    {
+      "title": "Straubing zieht bei den Raben den Kürzeren",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778784266",
+      "origin": "STR"
+    },
+    {
+      "title": "Rote Raben erst einmal auf Platz zwei",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778774762",
+      "origin": "RRV"
+    },
+    {
+      "title": "Derbyfieber",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778753742",
+      "origin": "STR"
+    },
+    {
+      "title": "Niederbayernderby mit besonderem Reiz",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778747529",
+      "origin": "RRV"
+    }
+  ],
+  "3037": [
+    {
+      "title": "Rote Raben erobern die Tabellenspitze",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779003993",
+      "origin": "RRV"
+    },
+    {
+      "title": "Vilsbiburg siegt klar im Spitzenspiel",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778999288",
+      "origin": "TVP"
+    },
+    {
+      "title": "Eine harte Nuss für die Roten Raben",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778955363",
+      "origin": "RRV"
+    },
+    {
+      "title": "Spitzenspiel in Dachau: TVP vs. Vilsbiburg",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778918222",
+      "origin": "TVP"
+    }
+  ],
+  "3048": [
+    {
+      "title": "Köln verliert 0:3 in Vilsbiburg",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779291374",
+      "origin": "DSK"
+    },
+    {
+      "title": "Rote Raben behalten ihre weiße Weste",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779276600",
+      "origin": "RRV"
+    },
+    {
+      "title": "Köln reist zum Tabellenführer",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779254375",
+      "origin": "DSK"
+    },
+    {
+      "title": "Raben wollen Heimnimbus behalten",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779245049",
+      "origin": "RRV"
+    }
+  ],
+  "3056": [
+    {
+      "title": "Eine klare Sache für die Roten Raben",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779372616",
+      "origin": "RRV"
+    },
+    {
+      "title": "Heimspiele gegen Vilsbiburg und Stralsund",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779312162",
+      "origin": "TVD"
+    }
+  ],
+  "3062": [
+    {
+      "title": "Vilsbiburg bleibt zu Hause ungeschlagen",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779489187",
+      "origin": "RRV"
+    },
+    {
+      "title": "Rote Raben wollen Tabellspitze verteidigen",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779440131",
+      "origin": "RRV"
+    }
+  ],
+  "3068": [
+    {
+      "title": "Letztes Heimspiel ein wahres TOPSPIEL",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779587002",
+      "origin": "GRI"
+    },
+    {
+      "title": "Rote Raben bleiben an der Spitze",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779575849",
+      "origin": "RRV"
+    },
+    {
+      "title": "Raben erwarten eine harte Aufgabe",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779560374",
+      "origin": "RRV"
+    },
+    {
+      "title": "ESA VOLLEYS wollen die Roten Raben ärgern",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779559790",
+      "origin": "GRI"
+    }
+  ],
+  "3076": [
+    {
+      "title": "Raben bleiben zu Hause weiter ungeschlagen",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779695655",
+      "origin": "RRV"
+    },
+    {
+      "title": "Rote Raben peilen Dreier an",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779678112",
+      "origin": "RRV"
+    }
+  ],
+  "3080": [
+    {
+      "title": "Volleys kommen nicht in Schwung",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779817221",
+      "origin": "BVL"
+    },
+    {
+      "title": "Rote Raben souverän",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779797845",
+      "origin": "RRV"
+    },
+    {
+      "title": "Volleys geben Favoritenrolle ab",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779778752",
+      "origin": "BVL"
+    },
+    {
+      "title": "Raben wollen einen beherzten Kampf liefern",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779767439",
+      "origin": "RRV"
+    }
+  ],
+  "3090": [
+    {
+      "title": "Rote Raben zu Hause unbesiegbar",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779933625",
+      "origin": "RRV"
+    },
+    {
+      "title": "Die Heimspielserie soll halten",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779923716",
+      "origin": "RRV"
+    }
+  ],
+  "3098": [
+    {
+      "title": "Den Spitzenreiter ein wenig geärgert",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780026172",
+      "origin": "NVM"
+    },
+    {
+      "title": "Arbeitssieg gegen Markkleeberg",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780004854",
+      "origin": "RRV"
+    },
+    {
+      "title": "Rote Raben sind vorbereitet",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779980700",
+      "origin": "RRV"
+    },
+    {
+      "title": "Den Spitzenreiter ärgern",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779980494",
+      "origin": "NVM"
+    }
+  ],
+  "3104": [
+    {
+      "title": "TVW liefert Tabellenführer heißen Kampf",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780119820",
+      "origin": "TVW"
+    },
+    {
+      "title": "Mit Kampf und Leidenschaft zum Sieg",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780096933",
+      "origin": "RRV"
+    },
+    {
+      "title": "Raben reisen mit Respekt nach Waldgirmes",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780088752",
+      "origin": "RRV"
+    }
+  ],
+  "3111": [
+    {
+      "title": "Vilsbiburg hat klar dominiert",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780205797",
+      "origin": "BER"
+    },
+    {
+      "title": "Roten Raben wollen in Berlin nachlegen",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780173894",
+      "origin": "RRV"
+    },
+    {
+      "title": "Schwergewicht aus Niederbayern in Berlin",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780149480",
+      "origin": "BER"
+    }
+  ],
+  "3116": [
+    {
+      "title": "Niederlage beim Spitzenreiter",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780300853",
+      "origin": "SWS"
+    },
+    {
+      "title": "Geglückte Revanche der Roten Raben",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780282278",
+      "origin": "RRV"
+    },
+    {
+      "title": "Beim Spitzenreiter zu Gast",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780251324",
+      "origin": "SWS"
+    },
+    {
+      "title": "Ein besonderes Spiel erwartet die Raben",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780247161",
+      "origin": "RRV"
+    }
+  ],
+  "3125": [
+    {
+      "title": "Klare Ansage",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780379225",
+      "origin": "STR"
+    },
+    {
+      "title": "Rote Raben siegen im Niederbayernderby",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780370065",
+      "origin": "RRV"
+    },
+    {
+      "title": "Eine ganz besondere Herausforderung",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780361600",
+      "origin": "RRV"
+    },
+    {
+      "title": "Kampf um die Vorherrschaft in Niederbayern",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780340018",
+      "origin": "STR"
+    }
+  ],
+  "3128": [
+    {
+      "title": "Mit zehn Punkten Vorsprung Tabellenführer",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780473536",
+      "origin": "RRV"
+    }
+  ],
+  "3139": [
+    {
+      "title": "Köln unterliegt dem Spitzenreiter klar",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780573170",
+      "origin": "DSK"
+    },
+    {
+      "title": "Rote Raben lassen nichts anbrennen",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780550930",
+      "origin": "RRV"
+    },
+    {
+      "title": "Köln empfängt Ligaprimus Vilsbiburg",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780537193",
+      "origin": "DSK"
+    }
+  ],
+  "3147": [
+    {
+      "title": "Gute Leistung beim Tabellenführer",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780737139",
+      "origin": "TVD"
+    },
+    {
+      "title": "Rote Raben zu Hause weiter ungeschlagen",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780735561",
+      "origin": "RRV"
+    },
+    {
+      "title": "Die Weste soll weiß bleiben",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780719552",
+      "origin": "RRV"
+    },
+    {
+      "title": "Zum Derby nach Vilsbiburg",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780655346",
+      "origin": "TVD"
+    }
+  ],
+  "3153": [
+    {
+      "title": "So nah und doch so fern",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780944833",
+      "origin": "TVH"
+    },
+    {
+      "title": "Mit Kampf, Konsequenz und Erfahrung",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780897710",
+      "origin": "RRV"
+    },
+    {
+      "title": "Doppelte Herausforderung",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780883721",
+      "origin": "TVH"
+    }
+  ],
+  "3159": [
+    {
+      "title": "Rote Raben sichern sich vorzeitig Titel",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780995486",
+      "origin": "RRV"
+    },
+    {
+      "title": "Erstes \"Endspiel\" für die Roten Raben",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780985198",
+      "origin": "RRV"
+    }
+  ],
+  "3167": [
+    {
+      "title": "Souveräner Auftritt der Roten Raben",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781153542",
+      "origin": "RRV"
+    }
+  ],
+  "3171": [
+    {
+      "title": "Sauermann kann Volleys nicht helfen",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781314162",
+      "origin": "BVL"
+    },
+    {
+      "title": "Rote Raben bekommen den Meisterpokal",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781288259",
+      "origin": "RRV"
+    },
+    {
+      "title": "Sauermann hört als Coach der Volleys auf",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781285941",
+      "origin": "BVL"
+    },
+    {
+      "title": "Das letzte Heimspiel der Saison",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781266791",
+      "origin": "RRV"
+    }
+  ],
+  "3181": [
+    {
+      "title": "Starker Abschluss einer besonderen Saison",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781372825",
+      "origin": "OYT"
+    },
+    {
+      "title": "Rote Raben auf Erstligakurs",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781368026",
+      "origin": "RRV"
+    },
+    {
+      "title": "Showdown zum Saisonabschluss",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781303445",
+      "origin": "OYT"
+    }
+  ],
+  "3194": [
+    {
+      "title": "Niederlage gegen starke Vilsbiburger",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779021483",
+      "origin": "VCO"
+    },
+    {
+      "title": "Rote Raben festigen die Tabellenführung",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779004055",
+      "origin": "RRV"
+    }
+  ],
+  "3208": [
+    {
+      "title": "Rote Raben siegen souverän gegen VCO",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780468170",
+      "origin": "RRV"
+    },
+    {
+      "title": "Rote Raben am Sonntag erneut gefordert",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780459447",
+      "origin": "RRV"
+    },
+    {
+      "title": "Rote Raben wollen weiße Weste behalten",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780444190",
+      "origin": "RRV"
+    }
+  ]
+};
+
+const officialReportUrls = {
+  "3007": "https://distributor.sams-score.de/scoresheet/pdf/b53d41d0-af1f-430e-89d6-64d359b5bf9c/3007",
+  "3013": "https://distributor.sams-score.de/scoresheet/pdf/79a714ce-3713-423d-ae1a-e2ce60824a0d/3013",
+  "3020": "https://distributor.sams-score.de/scoresheet/pdf/2ca0f57b-e894-4094-bfa1-4df6243cfbf5/3020",
+  "3025": "https://distributor.sams-score.de/scoresheet/pdf/ed8ba109-7ec4-4b11-bb74-e53769356d8d/3025",
+  "3034": "https://distributor.sams-score.de/scoresheet/pdf/060844cd-d73b-4215-8828-23d91a6fbaa2/3034",
+  "3037": "https://distributor.sams-score.de/scoresheet/pdf/c591e75e-9dae-4cef-904d-ba8d221b2695/3037",
+  "3048": "https://distributor.sams-score.de/scoresheet/pdf/1ca09abb-271b-4b84-b319-f57cb34af190/3048",
+  "3056": "https://distributor.sams-score.de/scoresheet/pdf/d1ba2258-11bc-4aa3-a1bc-3770f3ec4bf5/3056",
+  "3062": "https://distributor.sams-score.de/scoresheet/pdf/fc7b7438-05c9-41dd-826c-546469a0c513/3062",
+  "3068": "https://distributor.sams-score.de/scoresheet/pdf/f32c7784-c951-4f21-ba5a-ef1856d2be09/3068",
+  "3076": "https://distributor.sams-score.de/scoresheet/pdf/57c5dc88-7f05-4e6b-a675-94b9693aff50/3076",
+  "3080": "https://distributor.sams-score.de/scoresheet/pdf/fa9ed7fb-0e47-4bc5-a159-f0dc3805fb06/3080",
+  "3090": "https://distributor.sams-score.de/scoresheet/pdf/51533f77-c81c-45b4-b6b0-280d1c8481cd/3090",
+  "3098": "https://distributor.sams-score.de/scoresheet/pdf/10b389c9-a4dd-4f79-a79a-acb93825d71e/3098",
+  "3104": "https://distributor.sams-score.de/scoresheet/pdf/56441e10-f3be-4bc8-b777-a2f58c798bde/3104",
+  "3111": "https://distributor.sams-score.de/scoresheet/pdf/9bda92b9-de7a-4a65-b7cb-2c6731b04843/3111",
+  "3116": "https://distributor.sams-score.de/scoresheet/pdf/ff124db4-de40-4f25-a205-60edc5458192/3116",
+  "3125": "https://distributor.sams-score.de/scoresheet/pdf/fcac4f23-1bd2-4739-a68f-d4094ddb8a31/3125",
+  "3128": "https://distributor.sams-score.de/scoresheet/pdf/95da3dc5-689a-44e0-a0d1-974d7f208628/3128",
+  "3139": "https://distributor.sams-score.de/scoresheet/pdf/edfe6e05-5702-4900-a8b0-715330464e85/3139",
+  "3147": "https://distributor.sams-score.de/scoresheet/pdf/53a1f424-9309-413a-b289-08fa26d6576a/3147",
+  "3153": "https://distributor.sams-score.de/scoresheet/pdf/8b35d264-83a6-4eb2-bf1e-64931af36e25/3153",
+  "3159": "https://distributor.sams-score.de/scoresheet/pdf/c6397b86-f4bc-4700-bd96-02dc9b5c7599/3159",
+  "3167": "https://distributor.sams-score.de/scoresheet/pdf/e934ffa2-84b4-4136-a09d-f184b199eeba/3167",
+  "3171": "https://distributor.sams-score.de/scoresheet/pdf/27808e6b-69b2-4787-a5c0-6f57675a2f63/3171",
+  "3181": "https://distributor.sams-score.de/scoresheet/pdf/34188030-39ee-496c-81d1-ce4f6df94985/3181",
+  "3194": "https://distributor.sams-score.de/scoresheet/pdf/54eb5226-dca5-474c-8df2-cc8129b633b3/3194",
+  "3208": "https://distributor.sams-score.de/scoresheet/pdf/96046c21-30f4-4961-933e-6eb293d02933/3208"
+};
+
+const unavailableStatistics = [3167];
+
+const gameSummaries = {
+  "3007": [
+    "Die Roten Raben starteten beim Aufsteiger Markkleeberg mit einem überzeugenden 3:0 in die Saison.",
+    "Die Gastgeberinnen hielten vor allem im zweiten Satz phasenweise gut dagegen, doch Vilsbiburg setzte sich mit hohem Tempo und starken Aufschlägen ab.",
+    "Nach 61 Minuten war der klare Auftakterfolg mit 25:14, 25:18 und 25:16 perfekt."
+  ],
+  "3013": [
+    "Beim ersten Heimspiel mussten die Roten Raben gegen den TV Waldgirmes ein hartes Stück Arbeit bewältigen.",
+    "Der Aufsteiger entschied den zweiten Satz für sich und zwang Vilsbiburg zu mehr Konsequenz in Aufschlag und Angriff.",
+    "Die Raben fanden die passende Antwort und brachten den 3:1-Sieg nach 93 Minuten ins Ziel."
+  ],
+  "3020": [
+    "Die Roten Raben behielten auch gegen den personell geschwächten BBSC Berlin ihre weiße Weste.",
+    "Vilsbiburg kontrollierte die Partie über weite Strecken und ließ den Gästen in keinem Satz mehr als 18 Punkte.",
+    "Mit dem 3:0 festigte das Team seinen Platz in der Spitzengruppe."
+  ],
+  "3025": [
+    "In Stralsund kassierten die Roten Raben nach einem intensiven Fünfsatzspiel ihre erste Saisonniederlage.",
+    "Vilsbiburg erkämpfte sich nach wechselhaftem Verlauf zweimal den Satzausgleich und nahm damit noch einen Tabellenpunkt mit.",
+    "Im Tiebreak hatten die Wildcats die besseren Schlussaktionen und gewannen 15:12."
+  ],
+  "3034": [
+    "Im Niederbayernderby waren die Roten Raben für NawaRo Straubing eine Nummer zu groß.",
+    "Vilsbiburg bestimmte die Partie mit druckvollem Spiel und gab in den drei Sätzen zusammen nur 44 Ballpunkte ab.",
+    "Der klare 3:0-Erfolg brachte den Raben drei weitere Tabellenpunkte."
+  ],
+  "3037": [
+    "Die Roten Raben gewannen das Spitzenspiel beim bisherigen Tabellenführer Planegg-Krailling eindrucksvoll mit 3:0.",
+    "Vilsbiburg setzte die Gastgeberinnen von Beginn an unter Druck und kontrollierte alle drei Sätze.",
+    "Nach nur 68 Minuten übernahmen die Raben mit dem Auswärtssieg die Tabellenführung."
+  ],
+  "3048": [
+    "DSHS SnowTrex Köln hielt beim Tabellenführer phasenweise gut dagegen, blieb aber ohne Satzgewinn.",
+    "Die Roten Raben entschieden die engen Phasen mit größerer Konsequenz und behaupteten ihren Heimnimbus.",
+    "Mit 25:20, 25:20 und 25:21 gewann Vilsbiburg verdient mit 3:0."
+  ],
+  "3056": [
+    "Beim TV Dingolfing unterstrichen die Roten Raben ihre Rolle als Spitzenreiter.",
+    "Nach einem noch ausgeglichenen ersten Durchgang dominierten sie die Sätze zwei und drei deutlich.",
+    "Vilsbiburg gewann in 63 Minuten mit 3:0 und ließ insgesamt nur 33 Ballpunkte zu."
+  ],
+  "3062": [
+    "Die Roten Raben verteidigten gegen den TV Hörde ihre Tabellenführung und blieben zu Hause ungeschlagen.",
+    "Hörde leistete Widerstand, doch Vilsbiburg war in den entscheidenden Situationen stabiler.",
+    "Nach drei Sätzen und 72 Minuten stand der nächste 3:0-Heimsieg fest."
+  ],
+  "3068": [
+    "Die ESA Grimma Volleys brachten den Tabellenführer mehrfach in Bedrängnis und waren einem Satzgewinn nahe.",
+    "Vilsbiburg behielt in den engen Schlussphasen jedoch die Ruhe und setzte sich routiniert durch.",
+    "Der 3:0-Auswärtssieg hielt die Roten Raben an der Tabellenspitze."
+  ],
+  "3076": [
+    "Die Roten Raben blieben auch im sechsten Heimspiel der Saison ungeschlagen.",
+    "Gegen Eintracht Spontent Düsseldorf kontrollierte Vilsbiburg die Partie und geriet in keinem Satz ernsthaft unter Druck.",
+    "Nach nur 62 Minuten war der klare 3:0-Erfolg vollendet."
+  ],
+  "3080": [
+    "Bei den BayerVolleys Leverkusen traten die Roten Raben souverän und konzentriert auf.",
+    "Vilsbiburg setzte die Gastgeberinnen mit Aufschlag und Block unter Druck und ließ ihnen wenig Raum für einen eigenen Rhythmus.",
+    "Der Tabellenführer gewann alle drei Sätze und nahm mit dem 3:0 die volle Punktausbeute mit."
+  ],
+  "3090": [
+    "Auch der Tabellendritte VfL Oythe konnte die Heimserie der Roten Raben nicht stoppen.",
+    "Vilsbiburg steigerte sich im Verlauf der Partie und dominierte besonders den dritten Satz.",
+    "Nach 73 Minuten stand ein deutliches 3:0 mit 25:20, 25:22 und 25:13."
+  ],
+  "3098": [
+    "Markkleeberg ärgerte den Spitzenreiter phasenweise, konnte dessen Erfolgsserie aber nicht beenden.",
+    "Die Roten Raben mussten sich den Arbeitssieg gegen den kämpferischen Aufsteiger konzentriert verdienen.",
+    "Am Ende setzte sich Vilsbiburg in drei Sätzen durch und blieb an der Spitze."
+  ],
+  "3104": [
+    "Der TV Waldgirmes lieferte dem Tabellenführer einen heißen Kampf und gewann den ersten Satz.",
+    "Vilsbiburg antwortete mit mehr Druck, Kampf und Konsequenz und drehte die Partie anschließend.",
+    "Die Roten Raben holten mit dem 3:1-Auswärtssieg die nächsten drei Punkte."
+  ],
+  "3111": [
+    "Beim BBSC Berlin wurden die Roten Raben ihrer Favoritenrolle klar gerecht.",
+    "Vilsbiburg dominierte mit druckvollem Aufschlagspiel und ließ den Gastgeberinnen keine echte Chance auf einen Satzgewinn.",
+    "Der Tabellenführer entschied die Begegnung glatt mit 3:0 für sich."
+  ],
+  "3116": [
+    "Gegen die Sparkassen Wildcats Stralsund gelang den Roten Raben die Revanche für die Hinspielniederlage.",
+    "Die Gäste hielten kämpferisch dagegen, doch Vilsbiburg setzte sich mit der druckvolleren Spielweise in den entscheidenden Phasen ab.",
+    "Mit dem 3:0 blieb die Heimbilanz der Raben makellos."
+  ],
+  "3125": [
+    "Die Roten Raben entschieden auch das zweite Niederbayernderby gegen NawaRo Straubing klar für sich.",
+    "Vilsbiburg gab von Beginn an den Takt vor und kontrollierte Aufschlag, Block und Angriff.",
+    "Der 3:0-Auswärtssieg unterstrich die Vorherrschaft des Tabellenführers."
+  ],
+  "3128": [
+    "Das Heimspiel gegen Planegg-Krailling entwickelte sich zu einem emotionalen und umkämpften Volleyballabend.",
+    "Die Roten Raben bewiesen nach dem Satzverlust Kampfgeist und Nervenstärke in den entscheidenden Situationen.",
+    "Mit dem 3:1-Erfolg baute Vilsbiburg den Vorsprung an der Tabellenspitze auf zehn Punkte aus."
+  ],
+  "3139": [
+    "DSHS SnowTrex Köln stellte sich dem Ligaprimus mutig entgegen, konnte dessen Klasse aber nicht dauerhaft bremsen.",
+    "Die Roten Raben behielten in den umkämpften Phasen die Kontrolle und entschieden alle drei Sätze für sich.",
+    "Vilsbiburg gewann auswärts mit 3:0 und ließ im Titelrennen nichts anbrennen."
+  ],
+  "3147": [
+    "Der TV Dingolfing zeigte im Derby beim Tabellenführer eine gute Leistung und belohnte sich mit einem Satzgewinn.",
+    "Die Roten Raben fanden nach dem verlorenen Durchgang zurück zu ihrem druckvollen Spiel.",
+    "Mit dem 3:1 blieben sie auch in diesem Heimspiel ungeschlagen."
+  ],
+  "3153": [
+    "Der TV Hörde forderte den Tabellenführer in eigener Halle besonders in den engen Satzphasen.",
+    "Vilsbiburg setzte sich mit Kampf, Konsequenz und größerer Erfahrung jeweils rechtzeitig ab.",
+    "Die Roten Raben gewannen das Auswärtsspiel mit 3:0."
+  ],
+  "3159": [
+    "Mit einem überzeugenden 3:0 gegen die ESA Grimma Volleys machten die Roten Raben den Meistertitel vorzeitig perfekt.",
+    "Vilsbiburg kontrollierte die Partie und ließ beim entscheidenden Schritt keine Zweifel aufkommen.",
+    "Vier Spieltage vor Saisonende war das Team rechnerisch nicht mehr von Platz eins zu verdrängen."
+  ],
+  "3167": [
+    "Obwohl der Meistertitel bereits feststand, trat Vilsbiburg in Düsseldorf konzentriert und souverän auf.",
+    "Die Roten Raben bestimmten die Begegnung und ließen den Gastgeberinnen in den entscheidenden Phasen wenig Spielraum.",
+    "Mit dem 3:0-Auswärtssieg bestätigten sie noch einmal ihre Spitzenstellung."
+  ],
+  "3171": [
+    "Im letzten Heimspiel der Saison erhielten die Roten Raben nach dem 3:0 gegen Leverkusen den Meisterpokal.",
+    "Vilsbiburg kontrollierte die Partie trotz des bereits feststehenden Titels und gab keinen Satz ab.",
+    "Der souveräne Erfolg bildete den passenden sportlichen Rahmen für die anschließende Meisterfeier."
+  ],
+  "3181": [
+    "Zum Saisonabschluss musste sich der bereits feststehende Meister beim VfL Oythe mit 0:3 geschlagen geben.",
+    "Oythe erwischte den besseren Tag und setzte Vilsbiburg mit einem starken Auftritt durchgehend unter Druck.",
+    "Die Niederlage änderte nichts an der herausragenden Saison und dem ersten Tabellenplatz der Roten Raben."
+  ],
+  "3194": [
+    "Beim VCO Dresden brauchten die Roten Raben nach einem wechselhaften Beginn Geduld.",
+    "Dresden glich nach dem ersten Satz aus, doch Vilsbiburg stabilisierte sich und entschied die folgenden Durchgänge für sich.",
+    "Der 3:1-Erfolg festigte die Tabellenführung der Raben."
+  ],
+  "3208": [
+    "Gegen den VCO Dresden erlebten die Roten Raben einen nahezu perfekten Abend.",
+    "Vilsbiburg dominierte die Begegnung vom ersten Ballwechsel an und gab insgesamt nur 36 Ballpunkte ab.",
+    "Nach gerade einmal 56 Minuten war der souveräne 3:0-Sieg besiegelt."
+  ]
+};
 
 const games = [
   {
@@ -615,7 +1273,6 @@ const games = [
       "18:25",
       "16:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/b53d41d0-af1f-430e-89d6-64d359b5bf9c/3007",
     rankAfter: 1,
     venue: "Neuseenlandhalle",
     spectators: 230,
@@ -631,10 +1288,6 @@ const games = [
         name: "Crystal Burk",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=771634116"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778401249",
-    summary: [
-      "Das war es nun, das erste (Heim-)Spiel in der für die jungen Damen der Neuseenland-Volleys Markkleeberg \"neuen\" Liga. 230 Fans waren in die Neuseenlandhalle gekommen und sorgten für tolle Stimmung."
     ],
     videoUrl: "https://www.youtube.com/live/cDpIX6kI_9w?si=HSXqUtQAFW7Le6de",
     youtubeViews: 1736
@@ -655,7 +1308,6 @@ const games = [
       "25:18",
       "25:22"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/79a714ce-3713-423d-ae1a-e2ce60824a0d/3013",
     rankAfter: 2,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 583,
@@ -671,10 +1323,6 @@ const games = [
         name: "Emma Carlotta Dogu",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309795&userId=685275014"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778486623",
-    summary: [
-      "Vilsbiburg. Es war ein hartes Stück Arbeit, bis die Roten Raben, ihren 3:1-Sieg in ihrem ersten Heimspiel der Saison 2025/26 gegen den Aufsteiger TV Waldgirmes eintüten konnten."
     ],
     videoUrl: "https://www.youtube.com/live/L8OjY6OCCwM?si=mZwtjTdO1zpVtxfs",
     youtubeViews: 1895
@@ -694,7 +1342,6 @@ const games = [
       "25:9",
       "25:17"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/2ca0f57b-e894-4094-bfa1-4df6243cfbf5/3020",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 446,
@@ -710,10 +1357,6 @@ const games = [
         name: "Paula Reinisch",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308987&userId=13394655"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778579260",
-    summary: [
-      "Mit nur 9 einsatzfähigen Spielerinnen machte sich Manuel Müller am Samstag auf die Reise nach Vilsbiburg. Nach dem klaren 3:0 Sieg der Raben war die Stimmung nicht von großer Euphorie geprägt."
     ],
     videoUrl: "https://www.youtube.com/live/sAbCao2XO0A?si=GU1Tt33NNG3IOExJ",
     youtubeViews: 1364
@@ -735,7 +1378,6 @@ const games = [
       "12:25",
       "16:14"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/ed8ba109-7ec4-4b11-bb74-e53769356d8d/3025",
     rankAfter: 1,
     venue: "Diesterweg-Sporthalle",
     spectators: 425,
@@ -751,10 +1393,6 @@ const games = [
         name: "Pia Fernau",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=678774889"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778688489",
-    summary: [
-      "Nach wiederum fünf Sätzen konnte der zweite Sieg in Folge erspielt werden."
     ],
     videoUrl: "https://www.youtube.com/live/rSO49D7bztA?si=HSXqUtQAFW7Le6de",
     youtubeViews: 2577
@@ -774,7 +1412,6 @@ const games = [
       "25:23",
       "25:14"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/060844cd-d73b-4215-8828-23d91a6fbaa2/3034",
     rankAfter: 2,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 1293,
@@ -790,10 +1427,6 @@ const games = [
         name: "Valbona Ismaili",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=158916735"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778784266",
-    summary: [
-      "Der langjährige Erstligist Rote Raben Vilsbiburg war am Samstagabend für die Gäubodenstädterinnen eine Nummer zu groß. Am Ende stand ein 0:3 aus NawaRo-Sicht."
     ],
     videoUrl: "https://www.youtube.com/live/dkBUaQSwYAI?si=xtEo70digjrBO-H8",
     youtubeViews: 1804
@@ -813,7 +1446,6 @@ const games = [
       "17:25",
       "16:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/c591e75e-9dae-4cef-904d-ba8d221b2695/3037",
     rankAfter: 1,
     venue: "Georg-Scherer-Halle",
     spectators: 250,
@@ -829,10 +1461,6 @@ const games = [
         name: "Pia Fernau",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=678774889"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779003993",
-    summary: [
-      "Das war eine beeindruckende Vorstellung: In 68 Minuten besiegten die Roten Raben den bisherigen Tabellenführer TV Planegg-Krailing mit 3:0. Damit ist Vilsbiburg neuer Tabellenführer."
     ],
     videoUrl: "https://www.youtube.com/live/-kFy8PoVW8E?si=ZvNqDlxT1lGk-ARM",
     youtubeViews: 1709
@@ -853,7 +1481,6 @@ const games = [
       "15:25",
       "18:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/54eb5226-dca5-474c-8df2-cc8129b633b3/3194",
     rankAfter: 1,
     venue: "Schulsporthalle des Sportschulzentrum",
     spectators: 105,
@@ -869,10 +1496,6 @@ const games = [
         name: "Crystal Burk",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=771634116"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779021483",
-    summary: [
-      "Nach einem durchwachsenen Start mit der gewohnten Aufstellung entwickelte sich das Spiel gegen den Tabellenführer Vilsbiburg zu einem echten Auf und Ab. Im ersten Satz fand der VCO Dresden nur schwer."
     ],
     videoUrl: "https://www.youtube.com/live/DsDAhU_xwak?si=KeI8T0KR2PrN8Xxx",
     youtubeViews: 2006
@@ -892,7 +1515,6 @@ const games = [
       "25:23",
       "25:18"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/1ca09abb-271b-4b84-b319-f57cb34af190/3048",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 916,
@@ -908,10 +1530,6 @@ const games = [
         name: "Hannah Mörke",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308895&userId=70203755"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779291374",
-    summary: [
-      "Köln zeigte in Vilsbiburg gute Ansätze und hielt phasenweise stark dagegen, blieb am Ende aber ohne Satzgewinn. Der Tabellenführer setzte sich verdient 3:0 durch."
     ],
     videoUrl: "https://www.youtube.com/watch?v=8egp1gOMuaw",
     youtubeViews: 1412
@@ -931,7 +1549,6 @@ const games = [
       "6:25",
       "7:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/d1ba2258-11bc-4aa3-a1bc-3770f3ec4bf5/3056",
     rankAfter: 1,
     venue: "Sporthalle Höll-Ost",
     spectators: 603,
@@ -947,10 +1564,6 @@ const games = [
         name: "Pia Fernau",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=678774889"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779372616",
-    summary: [
-      "Die Roten Raben haben eindrucksvoll unter Beweis gestellt, dass sie zu Recht auf Platz eins in der Sparda 2. Liga Pro stehen. Sie siegten deutlich TV Dingolfing mit 3:0 (25:20/25:6/25:7)"
     ],
     videoUrl: "https://www.youtube.com/live/aNH8JVScIMw?si=KeMftrDirPOwUGul",
     youtubeViews: 906
@@ -970,7 +1583,6 @@ const games = [
       "25:9",
       "25:15"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/fc7b7438-05c9-41dd-826c-546469a0c513/3062",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 722,
@@ -986,10 +1598,6 @@ const games = [
         name: "Frauke Böcker",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309275&userId=8173"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779489187",
-    summary: [
-      "Mit 3:0 siegten die die Roten Raben gegen den TV Hörde und verteidigten damit die Tabellenführung in der Sparda 2. Liga Pro."
     ],
     videoUrl: "https://www.youtube.com/live/goU84HQsaak?si=N75A7pK_ug9UkLqj",
     youtubeViews: 1345
@@ -1009,7 +1617,6 @@ const games = [
       "24:26",
       "15:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/f32c7784-c951-4f21-ba5a-ef1856d2be09/3068",
     rankAfter: 1,
     venue: "Muldentalhalle",
     spectators: 245,
@@ -1025,10 +1632,6 @@ const games = [
         name: "Anne Marie Hatch",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=778056897"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779587002",
-    summary: [
-      "Die ESA VOLLEYS sehr sehr nah an einer kleiner Sensation! Doch Vilsbiburg setzte sich routiniert durch...."
     ],
     videoUrl: "https://www.youtube.com/live/gavNYpG6a0g?si=wngRH6b9zQOIm-DT",
     youtubeViews: 1181
@@ -1048,7 +1651,6 @@ const games = [
       "25:17",
       "25:8"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/57c5dc88-7f05-4e6b-a675-94b9693aff50/3076",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 663,
@@ -1064,10 +1666,6 @@ const games = [
         name: "Lara Drölle",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776311815&userId=22326117"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779695655",
-    summary: [
-      "Am Ende war es wieder eine klare Angelegenheit: Die Roten Raben bleiben auch bei ihrem sechsten Heimspiel ungeschlagen. Sie besiegten in nur 62 Minuten Eintracht Spontent Düsseldorf mit 3:0."
     ],
     videoUrl: "https://www.youtube.com/watch?v=a59o7h6j_6E&pp=ygU4RFlOIEVpbnRyYWNodCBTcG9udGVudCBEw7xzc2VsZG9yZiBSb3RlIFJhYmVuIFZpbHNiaWJ1cmc%3D",
     youtubeViews: 1811
@@ -1087,7 +1685,6 @@ const games = [
       "15:25",
       "15:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/fa9ed7fb-0e47-4bc5-a159-f0dc3805fb06/3080",
     rankAfter: 1,
     venue: "Ostermann-Arena",
     spectators: 387,
@@ -1103,10 +1700,6 @@ const games = [
         name: "Jeannette Huskic",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=745078242"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779817221",
-    summary: [
-      "Zweitliga-Team von Coach Dirk Sauermann unterliegt Dresden und Vilsbiburg jeweils 0:3"
     ],
     videoUrl: "https://www.youtube.com/watch?v=Ew7JbDanOPQ",
     youtubeViews: 1064
@@ -1126,7 +1719,6 @@ const games = [
       "25:22",
       "25:13"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/51533f77-c81c-45b4-b6b0-280d1c8481cd/3090",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 984,
@@ -1142,10 +1734,6 @@ const games = [
         name: "Georgia McGovern",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308853&userId=777895387"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779933625",
-    summary: [
-      "Die Roten Raben sind nicht zu stoppen: Auch nicht von einem der ärgsten Verfolger, dem VfL Oythe. Das Team aus Vilsbiburg besiegte den Tabellendritten nach nur 73 Minuten mit 3:0 (25:20/25:22/25:13)."
     ],
     videoUrl: "https://www.youtube.com/live/jA0g1wIDswk?si=HQ5oXbWzt6fxDJmE",
     youtubeViews: 2060
@@ -1165,7 +1753,6 @@ const games = [
       "25:13",
       "25:19"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/10b389c9-a4dd-4f79-a79a-acb93825d71e/3098",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 465,
@@ -1181,10 +1768,6 @@ const games = [
         name: "Pauline Meyer",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309559&userId=770990166"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780026172",
-    summary: [
-      "„Vielleicht wachsen wir ja über uns hinaus und können die Vilsbiburgerinnen ein bisschen ärgern!“ hatte der Markkleeberger Chefcoach Tim Reichenbach vor dem Spiel gesagt."
     ],
     videoUrl: "https://www.youtube.com/live/X7Uu6-KaJBY?si=eqcnd4uD22xHZEh6",
     youtubeViews: 1641
@@ -1205,7 +1788,6 @@ const games = [
       "21:25",
       "17:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/56441e10-f3be-4bc8-b777-a2f58c798bde/3104",
     rankAfter: 1,
     venue: "Sporthalle der Lahntalschule Atzbach",
     spectators: 150,
@@ -1221,10 +1803,6 @@ const games = [
         name: "Tina De Groot",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=742835545"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780119820",
-    summary: [
-      "TV Waldgirmes – Rote Raben Vilsbiburg 1:3 / 85:96 (25:21 22:25 21:25 17:25) Der erste Satz gehörte mit Sicherheit zu den besten die das Team von Daniel Bock je abgeliefert haben."
     ],
     videoUrl: "https://www.youtube.com/live/gWTo4PeMiWI?si=m2jzjFJlhuw12KXw",
     youtubeViews: 1515
@@ -1244,7 +1822,6 @@ const games = [
       "11:25",
       "16:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/9bda92b9-de7a-4a65-b7cb-2c6731b04843/3111",
     rankAfter: 1,
     venue: "Sporthalle Hämmerlingstraße",
     spectators: 103,
@@ -1260,10 +1837,6 @@ const games = [
         name: "Emely Brodowski",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=760515928"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780205797",
-    summary: [
-      "Die BBSC Damen haben am Samstagabend dem favorisierten Tabellenführer aus Niederbayern keine echte Paroli bieten können."
     ],
     videoUrl: "https://www.youtube.com/live/Xn4l5tvmHF8?si=x6z9HLdwG0eMfnqj",
     youtubeViews: 887
@@ -1283,7 +1856,6 @@ const games = [
       "25:19",
       "25:14"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/ff124db4-de40-4f25-a205-60edc5458192/3116",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 907,
@@ -1299,10 +1871,6 @@ const games = [
         name: "Gesa Brandstrup",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309386&userId=752329134"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780300853",
-    summary: [
-      "In einem kämpferischen und teils ausgeglichen Spiel setzte sich die druckvollere Spielweise durch."
     ],
     videoUrl: "https://www.youtube.com/live/ICimEaKWWS4?si=MIwUwV35hRnZyveU",
     youtubeViews: 1609
@@ -1322,7 +1890,6 @@ const games = [
       "19:25",
       "22:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/fcac4f23-1bd2-4739-a68f-d4094ddb8a31/3125",
     rankAfter: 1,
     venue: "turmair Volleyballarena",
     spectators: 864,
@@ -1338,10 +1905,6 @@ const games = [
         name: "Pia Fernau",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=678774889"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780379225",
-    summary: [
-      "Mit 3:0 nach Sätzen konnte der mehrfache deutsche Meister und Pokalsieger von 2014 - Rote Raben Vilsbiburg – NawaRo Straubing am Samstagabend in heimischer Halle eine schmerzhafte Niederlage zufügen."
     ],
     videoUrl: "https://www.youtube.com/live/KIRh4YbMC0Q?si=_YfCxQqGpebTllTp",
     youtubeViews: 1887
@@ -1361,7 +1924,6 @@ const games = [
       "25:20",
       "25:19"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/96046c21-30f4-4961-933e-6eb293d02933/3208",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 889,
@@ -1377,10 +1939,6 @@ const games = [
         name: "Zoe Albert",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309105&userId=771894233"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780468170",
-    summary: [
-      "Nach gerade einmal 56 Minuten war alles vorbei. Ein Abend, der aus Sicht der Roten Raben kaum hätte runder laufen können. Sie besiegten den VCO Dresden klar mit 3:0."
     ],
     videoUrl: "https://www.youtube.com/live/HIaulpJkzcY?si=i75dTgYYJRwZ_tib",
     youtubeViews: 2001
@@ -1401,7 +1959,6 @@ const games = [
       "25:19",
       "25:20"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/95da3dc5-689a-44e0-a0d1-974d7f208628/3128",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 774,
@@ -1417,10 +1974,6 @@ const games = [
         name: "Joana Huber",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309673&userId=762602031"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780473536",
-    summary: [
-      "Was für ein Volleyball-Abend! Die Roten Raben haben ihren Fans ein Spiel voller Emotionen, Kampfgeist und Nervenstärke geschenkt – und sich am Ende mit einem hart erkämpften 3:1-Sieg belohnt"
     ],
     videoUrl: "https://www.youtube.com/live/_3V4RLmLpqE?si=4ial_DsSw71TlIvZ",
     youtubeViews: 1931
@@ -1440,7 +1993,6 @@ const games = [
       "15:25",
       "19:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/edfe6e05-5702-4900-a8b0-715330464e85/3139",
     rankAfter: 1,
     venue: "Deutsche Sporthochschule Köln, Halle 22",
     spectators: 102,
@@ -1456,10 +2008,6 @@ const games = [
         name: "Pia Fernau",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=678774889"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780573170",
-    summary: [
-      "DSHS SnowTrex Köln stellte sich dem Tabellenführer mutig entgegen, musste sich am Ende jedoch der Klasse der Roten Raben Vilsbiburg mit 0:3 geschlagen geben."
     ],
     videoUrl: "https://www.youtube.com/watch?v=hxFniOAftro",
     youtubeViews: 1013
@@ -1480,7 +2028,6 @@ const games = [
       "25:12",
       "25:20"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/53a1f424-9309-413a-b289-08fa26d6576a/3147",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 1124,
@@ -1496,10 +2043,6 @@ const games = [
         name: "Franziska Koob",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309004&userId=742778854"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780737139",
-    summary: [
-      "Der TV Dingolfing zeigte am Samstagabend beim Derby in Vilsbiburg trotz der Vier-Satz-Niederlage eine gute Leistung."
     ],
     videoUrl: "https://www.youtube.com/live/dlQSTEnhGB0?si=JrwCQMgxirWH_IN2",
     youtubeViews: 934
@@ -1519,7 +2062,6 @@ const games = [
       "19:25",
       "24:26"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/8b35d264-83a6-4eb2-bf1e-64931af36e25/3153",
     rankAfter: 1,
     venue: "Sporthalle Phoenix (Hörde III)",
     spectators: 67,
@@ -1535,10 +2077,6 @@ const games = [
         name: "Pia Fernau",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=678774889"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780944833",
-    summary: [
-      "Am Samstag, den 21. März 2026, lieferten sich die Hörder Mädchen vom TV Hörde in der heimischen „Hörder Festung“ in Dortmund ein packendes Duell mit dem Tabellenführer Rote Raben Vilsbiburg. Trotz der"
     ],
     videoUrl: "https://www.youtube.com/live/a-10NJEe7kA?si=DDIm68fwEXXfsDKX",
     youtubeViews: 947
@@ -1558,7 +2096,6 @@ const games = [
       "25:15",
       "25:20"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/c6397b86-f4bc-4700-bd96-02dc9b5c7599/3159",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 1467,
@@ -1574,10 +2111,6 @@ const games = [
         name: "Sydney Moore",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308803&userId=778381936"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780995486",
-    summary: [
-      "Mit einem überzeugenden 3:0-Erfolg gegen Grimma sind die Roten Raben nicht mehr einzuholen. Damit haben sie sich bereits vier Spieltage vor dem Ende der Saison den Meistertitel."
     ],
     videoUrl: "https://www.youtube.com/live/mqbgCeE5SVM?si=F4V7Rt1GN2AyZ86E",
     youtubeViews: 2278
@@ -1597,7 +2130,6 @@ const games = [
       "24:26",
       "23:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/e934ffa2-84b4-4136-a09d-f184b199eeba/3167",
     rankAfter: 1,
     venue: "DH Brinckmannstraße, Hulda Pankok",
     spectators: 50,
@@ -1613,10 +2145,6 @@ const games = [
         name: "Jenni Liu",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=59195178"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781153542",
-    summary: [
-      "Auch wenn die Roten Raben bereits als Meister in der Sparda 2. Liga Pro feststehen, haben sie eindrucksvoll bewiesen, warum sie ganz oben stehen: Mit einem souveränen 3:0-Auswärtssieg in Düsseldorf."
     ],
     videoUrl: "https://www.youtube.com/watch?v=PNjF77BZYd0&pp=ygU4RFlOIEVpbnRyYWNodCBTcG9udGVudCBEw7xzc2VsZG9yZiBSb3RlIFJhYmVuIFZpbHNiaWJ1cmc%3D",
     youtubeViews: 3811
@@ -1636,7 +2164,6 @@ const games = [
       "25:12",
       "25:19"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/27808e6b-69b2-4787-a5c0-6f57675a2f63/3171",
     rankAfter: 1,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 1508,
@@ -1652,10 +2179,6 @@ const games = [
         name: "Clara Wübbeke",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308933&userId=678885032"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781314162",
-    summary: [
-      "Der Trainer fliegt für die Partie in Vilsbiburg aus Finnland ein, doch das Team verliert mit 0:3"
     ],
     videoUrl: "https://www.youtube.com/watch?v=nol7UMPujxg",
     youtubeViews: 1243
@@ -1675,7 +2198,6 @@ const games = [
       "25:18",
       "25:21"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/34188030-39ee-496c-81d1-ce4f6df94985/3181",
     rankAfter: 1,
     venue: "SH Gymnasium Antonianum Vechta",
     spectators: 351,
@@ -1691,10 +2213,6 @@ const games = [
         name: "Alayna Beth Crabtree",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=778056865"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781372825",
-    summary: [
-      "Überraschungscoup zum Saisonabschluss: VfL Oythe schlägt Meister mit 3:0"
     ],
     videoUrl: "https://www.youtube.com/live/wZxzNFqRAMQ?si=RedgXmoIwZJsLSuG",
     youtubeViews: 1275

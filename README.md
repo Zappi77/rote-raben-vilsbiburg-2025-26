@@ -13,7 +13,7 @@ Die Seite enthält:
 - Teamlogos und Links zu Teamseiten
 - MVPs mit Spielerinnenlinks
 - Kurzberichte aus VBL-Spielartikeln bzw. neutralen Spieldaten
-- Links zu Spieldetails, Statistik-PDF, Spielartikeln und YouTube-Video
+- Links zu Spieldetails, offiziellem Spielbericht, Spielstatistik, Spielartikeln und YouTube-Video
 - Punkteverlauf als Kreis-Kette
 - Tabellenverlauf und Abschlusstabellen
 - Kreuztabelle
@@ -119,7 +119,7 @@ Typische Anpassungen:
 
 - YouTube-Aufrufe: `youtubeViews`
 - Stichtag der YouTube-Aufrufe: `youtubeViewsDate`
-- neue/andere Links: `videoUrl`, `videoUnavailable`, `articleUrl`
+- neue/andere Links: `videoUrl`, `videoUnavailable`, `matchArticles`
 - Spieltexte: `gameSummaries`
 - MVPs: `mvps`
 - Logos: `teamLogoUrls`
@@ -137,6 +137,16 @@ git push
 Die Teamlogos, Spieldetails, Statistik-PDFs, Spielartikel und YouTube-Videos werden extern verlinkt. Bildergalerien sind derzeit nicht hinterlegt.
 
 ## Änderungshistorie
+
+### 03.07.2026
+
+- 85 Vereinsartikel aus den VBL-Spieldetails übernommen und mit Vereinskuerzel gekennzeichnet
+- Kurzberichte für alle 28 Spiele auf drei Sätze ausgebaut; vorhandene Vereinsberichte dienten als Grundlage
+- offiziellen Spielbericht und zusätzliche Spielstatistik als getrennte Links in alle Spielkarten aufgenommen
+- alle 28 offiziellen Spielberichte und 28 Statistikadressen geprüft; die nicht verfügbare Statistik zu Spiel 3167 entsprechend gekennzeichnet
+- Impressum, Datenschutz und Copyright im Footer ergänzt
+- geerbte teamfremde Bezeichner in JavaScript und CSS bereinigt
+- Saisonbilanz, Artikelzeilen und Spielkarten für schmale Bildschirmbreiten angepasst
 
 ### 26.06.2026
 
